@@ -14,5 +14,14 @@ require('user.project')
 require('user.impatient')
 require('user.indentline')
 require('user.alpha')
-
 require('user.nvim-tree')
+require('user.telescope')
+require('user.lualine')
+
+-- Mason & LSP
+require('user.mason')
+require('user.rust')
+
+require('user.copilot')
+
+require('user.bufferline')

@@ -1,8 +1,12 @@
+vim.wo.wrap = true
+vim.wo.linebreak = true
+vim.wo.list = false -- extra option I set in addition to the ones in your question
+
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   cmdheight = 1,                           -- more space in the neovim command line for displaying messages
-  completeopt = { "menuone", "noselect" }, -- mostly just for cmp
+  completeopt = { "menuone", "noinsert", "noselect" }, -- mostly just for cmp
   conceallevel = 0,                        -- so that `` is visible in markdown files
   fileencoding = "utf-8",                  -- the encoding written to a file
   hlsearch = true,                         -- highlight all matches on previous search pattern
@@ -19,7 +23,7 @@ local options = {
   termguicolors = true,                    -- set term gui colors (most terminals support this)
   timeoutlen = 1000,                       -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo
-  updatetime = 100,                       -- faster completion (4000ms default)
+  updatetime = 300,                       -- faster completion (4000ms default)
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
   expandtab = true,                        -- convert tabs to spaces
   shiftwidth = 2,                          -- the number of spaces inserted for each indentation

@@ -73,8 +73,8 @@ nvim_tree.setup {
         default = "",
         symlink = "",
         folder = {
-          arrow_open = icons.ui.ArrowOpen,
-          arrow_closed = icons.ui.ArrowClosed,
+          arrow_open = "",
+          arrow_closed = "",
           default = "",
           open = "",
           empty = "",
@@ -122,8 +122,6 @@ nvim_tree.setup {
     timeout = 500,
   },
   view = {
-    width = 30,
-    height = 30,
     hide_root_folder = false,
     side = "left",
     -- auto_resize = true,

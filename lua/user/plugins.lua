@@ -60,8 +60,8 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua"
 
   -- Tabline
-  use "akinsho/bufferline.nvim"
-
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  
   -- Statusline
   use "christianchiarulli/lualine.nvim"
 
@@ -115,4 +115,11 @@ return packer.startup(function(use)
   -- Debugging
   use "mfussenegger/nvim-dap"
   use "rcarriga/nvim-dap-ui"
+
+  -- Rust
+  use("simrat39/rust-tools.nvim")
+
+  -- Copilot
+  use("github/copilot.vim")
+
 end)
