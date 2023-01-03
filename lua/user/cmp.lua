@@ -26,6 +26,7 @@ end
 
 local compare = require "cmp.config.compare"
 
+-- allows to load vscode-like plugins
 require("luasnip/loaders/from_vscode").lazy_load()
 
 -- local check_backspace = function()
@@ -228,7 +229,6 @@ cmp.setup {
     },
     { name = "path", group_index = 2 },
     { name = "emoji", group_index = 2 },
-    { name = "lab.quick_data", keyword_length = 4, group_index = 2 },
   },
   sorting = {
     priority_weight = 2,
@@ -254,11 +254,10 @@ cmp.setup {
     select = false,
   },
   window = {
-    documentation = false,
-    -- documentation = {
-    --   border = "rounded",
-    --   winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
-    -- },
+    documentation = {
+      border = "rounded",
+      winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
+    },
     completion = {
       border = "rounded",
       winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",

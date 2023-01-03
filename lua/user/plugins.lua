@@ -47,12 +47,12 @@ packer.init {
 return packer.startup(function(use)
   -- Plugin management
   use "wbthomason/packer.nvim" -- Have packer manage itsd
-  
+
   -- Lua Development
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "nvim-lua/popup.nvim"
   use "christianchiarulli/lua-dev.nvim"
-  
+
   -- Editing Support
   use "windwp/nvim-autopairs"
 
@@ -61,7 +61,7 @@ return packer.startup(function(use)
 
   -- Tabline
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
-  
+
   -- Statusline
   use "christianchiarulli/lualine.nvim"
 
@@ -121,5 +121,8 @@ return packer.startup(function(use)
 
   -- Copilot
   use("github/copilot.vim")
+
+  -- Formatter
+  use("mhartington/formatter.nvim")
 
 end)
